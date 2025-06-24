@@ -1,5 +1,5 @@
 # Simple Drops
-A script to add tile specific drops in Open Net Battle servers. 
+A script to add easily configurable ice tile drops in Open Net Battle servers. 
 
 ### How does it work?
 
@@ -20,9 +20,15 @@ A script to add tile specific drops in Open Net Battle servers.
 > 3. Insert a Point (you can press `I` on your keyboard then click to place it).
 > 4. Position the Point near the middle of the tile you want to become a drop zone.
 > 5. Set the Class to `Ice Drop`
-> 6. Add two string based Custom Properties
-> &nbsp; &nbsp; `Drop Edge` determines which side is a drop off ("Down Left", "Down Right", "Up Left", "Up Right")
-> &nbsp; &nbsp; `Landing` should be a whole number representing the Z or layer where the player is supposed to land.
-> &nbsp; &nbsp; If you want two edges to be drop zones simply set a second Point with the `Drop Edge` as the other edge.
+> 6. Add two string based Custom Properties<br>
+> &nbsp; &nbsp; `Drop Edge` determines which side is a drop off ("Down Left", "Down Right", "Up Left", "Up Right")<br>
+> &nbsp; &nbsp; `Landing` should be a whole number representing the Z or layer where the player is supposed to land.<br>
+> If you want two edges to be drop zones simply set a second Point with the `Drop Edge` as the other edge.
 
-On boot your server log should show the ice drop was added at that location, or an error if it was improperly configured. I highly recommend my [Fix Layers](https://github.com/indianajson/fix-layers) Tiled extension as it makes adding new layers a breeze. 
+On boot your server log should show the ice drop was added at that location, or an error if it was improperly configured. 
+
+I highly recommend my [Fix Layers](https://github.com/indianajson/fix-layers) Tiled extension as it makes adding new layers a breeze. 
+
+### Doesn't ezwarps from ezlibs do this already?
+
+> The `fall_off_2` animation provided with ezwarps does provide a similar function, however, it is limited to two layer drops only and may not work properly for "Up Left" and "Up Right" drops. 
